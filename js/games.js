@@ -303,15 +303,6 @@ window.GAMES = [
         category: 'Casual/Party',
         platforms: ['PC', 'Mobile', 'Switch', 'PlayStation', 'Xbox']
     },
-    {
-        slug: 'fall-guys',
-        title: 'Fall Guys',
-        image: 'game-images/fall-guys.jpg',
-        description: 'Battle royale party game with wacky obstacle courses.',
-        genres: ['Party', 'Battle Royale'],
-        category: 'Casual/Party',
-        platforms: ['PC', 'PlayStation', 'Xbox', 'Switch']
-    },
     
     // Simulation/Strategy Games
     {
@@ -396,24 +387,6 @@ window.GAMES = [
         genres: ['Action', 'Roguelike'],
         category: 'Indie',
         platforms: ['PC']
-    },
-    {
-        slug: 'stray',
-        title: 'Stray',
-        image: 'game-images/stray.jpg',
-        description: 'Adventure game where you play as a cat in a cybercity.',
-        genres: ['Adventure', 'Puzzle'],
-        category: 'Indie',
-        platforms: ['PC', 'PlayStation']
-    },
-    {
-        slug: 'hollow-knight',
-        title: 'Hollow Knight',
-        image: 'game-images/hollow-knight.jpg',
-        description: 'Beautifully hand-drawn action adventure in a vast ruined kingdom.',
-        genres: ['Metroidvania', 'Action'],
-        category: 'Indie',
-        platforms: ['PC', 'PlayStation', 'Xbox', 'Switch']
     }
 ];
 
