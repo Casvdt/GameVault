@@ -3,7 +3,12 @@ function getBasePrefix() {
 }
 
 function renderCategory(category) {
-    const games = (window.GAMES || []).filter(g => g.category && g.category.toLowerCase() === category.toLowerCase());
+    const games = (window.GAMES || []).filter(g => {
+        // Check both the category field and the genres array
+        const categoryMatch = g.category && g.category.toLowerCase() === category.toLowerCase();
+        const genreMatch = g.genres && g.genres.some(genre => genre.toLowerCase() === category.toLowerCase());
+        return categoryMatch || genreMatch;
+    });
     const mount = document.getElementById('category-view');
     if (!mount) return;
     mount.innerHTML = '';
