@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Vault</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -12,16 +15,15 @@
 </head>
 
 <body class="bg-dark">
-    <div class="main-wrapper">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark mb-4 sticky-top">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
                 <div class="container d-flex justify-content-between align-items-center">
                     <a class="navbar-brand" href="#">
                         <img src="images/game-vault-header.png" alt="Game Vault Logo" class="img-fluid header-img">
                     </a>
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active text-white fw-bold" href="#">Home</a>
+                            <a class="nav-link active text-white fw-bold" href="#"><i class="bi bi-house-fill me-1"></i> Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-white fw-bold" href="#" id="categoriesDropdown"
@@ -29,10 +31,10 @@
                                 <i class="bi bi-list-task"></i> Categories
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="categoriesDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">RPG</a></li>
-                                <li><a class="dropdown-item" href="#">Strategy</a></li>
-                                <li><a class="dropdown-item" href="#">Sports</a></li>
+                                <li><a class="dropdown-item" href="html/action.html">Action</a></li>
+                                <li><a class="dropdown-item" href="html/rpg.html">RPG</a></li>
+                                <li><a class="dropdown-item" href="html/strategy.html">Strategy</a></li>
+                                <li><a class="dropdown-item" href="html/sports.html">Sports</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -42,9 +44,9 @@
                     </form>
                 </div>
             </nav>
-        </header>
+    </header>
 
-
+    <div class="main-wrapper">
         <main>
             <div class="container-fluid p-0">
                 <div class="hero p-5 border-bottom border-white">
@@ -56,15 +58,33 @@
                 <div class="container my-5">
                     <h2 class="text-white mb-4">Featured Games</h2>
                     <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="card bg-secondary text-white h-100">
-                                <img src="images/game1.jpg" class="card-img-top" alt="Game 1">
-                                <div class="card-body">
-                                    <h5 class="card-title">Epic Adventure</h5>
-                                    <p class="card-text">Embark on an epic journey through mystical lands and face
-                                        formidable foes.</p>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <a href="html/game.html?slug=fortnite" class="text-decoration-none text-reset d-block">
+                                <div class="card h-100">
+                                    <img src="game-images/fortnite.jpg" class="card-img-top" alt="Fortnite">
                                 </div>
-                            </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <a href="html/game.html?slug=roblox" class="text-decoration-none text-reset d-block">
+                                <div class="card h-100">
+                                    <img src="game-images/roblox.jpg" class="card-img-top" alt="Roblox">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <a href="html/game.html?slug=minecraft" class="text-decoration-none text-reset d-block">
+                                <div class="card h-100">
+                                    <img src="game-images/minecraft.webp" class="card-img-top" alt="Minecraft">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <a href="html/game.html?slug=gtav" class="text-decoration-none text-reset d-block">
+                                <div class="card h-100">
+                                    <img src="game-images/GTAV.jpg" class="card-img-top" alt="Grand Theft Auto V">
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -78,6 +98,8 @@
     </div><!-- /.main-wrapper -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/games.js"></script>
+    <script src="js/search.js"></script>
     <script src="js/script.js"></script>
 </body>
 

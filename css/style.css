@@ -16,6 +16,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     min-height: 100vh;
+    font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
 .main-wrapper {
@@ -28,6 +29,7 @@ body {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(6px);
     min-height: 100vh;
+    padding-top: 96px;
 }
 
 :root {
@@ -37,19 +39,29 @@ body {
 
 
 nav {
-    background-color: var(--site-background);
+    background-color: rgba(102, 22, 22, 0.9);
+    backdrop-filter: blur(6px);
     padding: 10px 0;
 }
+
+/* Force navbar to remain visible while scrolling */
+header .navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1000px;
+    z-index: 1050 !important;
+}
+
+/* fixed-top is provided by Bootstrap; we only offset content below it */
 
 .footer {
     background-color: var(--site-background);
     color: var(--standard-text-color);
     padding: 20px 0;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 .hero-img {
@@ -60,4 +72,62 @@ nav {
     display: flex;
     justify-content: flex-start;
     width: 300px;
+}
+
+/* Ensure content area grows to push footer to bottom without overlapping */
+.main-wrapper main {
+    flex: 1;
+}
+
+/* Show full image without cropping; allow taller cards */
+.card-img-top {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+.card {
+    border: none;
+    overflow: hidden;
+    transition: transform 160ms ease, box-shadow 160ms ease;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+.dropdown-menu-dark {
+    backdrop-filter: blur(6px);
+}
+
+form[role="search"] .form-control {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+form[role="search"] .form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.15);
+    border-color: rgba(255,255,255,0.35);
+}
+
+form[role="search"] .btn {
+    border-color: rgba(255,255,255,0.35);
+}
+
+#game-view .card-img-top {
+    height: 600px;      /* tweak as you like */
+    object-fit: cover;  /* or contain for full image */
+}
+
+.card-body {
+    background-color: var(--site-background);
+}
+
+#game-view .card-img-top {
+    height: 600px;      /* tweak as you like */
+    object-fit: cover;  /* or contain */
+    border-radius: 6px; /* example */
 }
