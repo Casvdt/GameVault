@@ -4,4 +4,60 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+}
 
+body {
+    background-image: url('../images/body-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.main-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    min-height: 100vh;
+}
+
+:root {
+    --site-background: rgb(102, 22, 22);
+    --standard-text-color: white;
+}
+
+
+nav {
+    background-color: var(--site-background);
+    padding: 10px 0;
+}
+
+.footer {
+    background-color: var(--site-background);
+    color: var(--standard-text-color);
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.hero-img {
+    width: 600px;
+}
+
+.header-img {
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+}
