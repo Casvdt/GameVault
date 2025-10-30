@@ -1,3 +1,4 @@
+/* Base styles */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-size: 16px; /* Base font size for rem units */
 }
 
 body {
@@ -18,6 +20,7 @@ body {
     font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     display: flex;
     flex-direction: column;
+    line-height: 1.5;
 }
 
 .main-wrapper {
@@ -34,16 +37,47 @@ body {
     flex-direction: column;
 }
 
+/* Responsive Typography */
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
 :root {
     --site-background: rgb(102, 22, 22);
     --standard-text-color: white;
 }
 
-
-nav {
+/* Navigation */
+.navbar {
     background-color: rgba(102, 22, 22, 0.9);
     backdrop-filter: blur(6px);
     padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+/* Make navbar non-sticky on mobile */
+@media (max-width: 991.98px) {
+    .navbar.fixed-top {
+        position: relative !important;
+    }
+    
+    .main-wrapper {
+        padding-top: 0 !important;
+    }
+    
+    .navbar-toggler {
+        margin-right: 1rem;
+    }
+    
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+    }
 }
 
 /* Footer */
@@ -104,8 +138,9 @@ header .navbar {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     height: 100%;
+    margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
     max-width: 240px; /* Limit card width */
@@ -117,20 +152,8 @@ header .navbar {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Image container with taller aspect ratio */
-.game-card-img-container {
-    position: relative;
-    width: 100%;
-    height: 300px; /* Fixed height for images */
-    overflow: hidden;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Image styling */
-.game-card-img {
-    width: 100%;
-    height: 100%;
+.game-card .card-img-top {
+    height: 200px;
     object-fit: cover;
     object-position: center;
     transition: transform 0.4s ease, filter 0.4s ease;
