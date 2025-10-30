@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Similar structure to survival-horror.html but for Fighting games -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting Games - Game Vault</title>
+    <!-- Same head content as survival-horror.html -->
+    <!-- ... -->
+</head>
+<body class="bg-dark">
+    <!-- Same header/nav as survival-horror.html but with Fighting category active -->
+    <div class="main-wrapper">
+        <main>
+            <div class="container my-5 pt-5">
+                <h1 class="text-white mb-4">Fighting Games</h1>
+                <div class="row g-4" id="games-container">
+                    <!-- Games will be dynamically loaded here -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Same footer as survival-horror.html -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const gamesContainer = document.getElementById('games-container');
+            const category = 'Fighting';
+            
+            const categoryGames = window.GAMES.filter(game => game.category === category);
+            
+            if (categoryGames.length > 0) {
+                categoryGames.forEach(game => {
+                    // Same game card generation as survival-horror.html
+                });
+            } else {
+                gamesContainer.innerHTML = '<p class="text-white">No games found in this category.</p>';
+            }
+        });
+    </script>
+</body>
+</html>

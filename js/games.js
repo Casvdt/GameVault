@@ -120,7 +120,7 @@ window.GAMES = [
         description: 'Epic adventure in the kingdom of Hyrule with new abilities.',
         genres: ['Action', 'Adventure'],
         category: 'Adventure',
-        platforms: ['Switch']
+        platforms: ['Nintendo Switch']
     },
     
     // RPG Games
@@ -263,7 +263,7 @@ window.GAMES = [
         description: 'Classic Tetris with stunning visual effects.',
         genres: ['Puzzle', 'Arcade'],
         category: 'Puzzle',
-        platforms: ['PC', 'PlayStation', 'Xbox', 'Switch']
+        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S', 'Nintendo Switch']
     },
     
     // Casual/Party Games
@@ -274,7 +274,7 @@ window.GAMES = [
         description: 'Battle royale party game with wacky obstacle courses.',
         genres: ['Party', 'Battle Royale'],
         category: 'Casual/Party',
-        platforms: ['PC', 'PlayStation', 'Xbox', 'Switch']
+        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S', 'Nintendo Switch']
     },
     {
         slug: 'overcooked-2',
@@ -283,7 +283,7 @@ window.GAMES = [
         description: 'Chaotic cooking simulation game for up to 4 players.',
         genres: ['Party', 'Simulation'],
         category: 'Casual/Party',
-        platforms: ['PC', 'PlayStation 4', 'Xbox One', 'Switch']
+        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S', 'Nintendo Switch']
     },
     {
         slug: 'mario-kart-8-deluxe',
@@ -292,7 +292,7 @@ window.GAMES = [
         description: 'The definitive version of Mario Kart 8 with all DLC included.',
         genres: ['Racing', 'Party'],
         category: 'Casual/Party',
-        platforms: ['Switch']
+        platforms: ['Nintendo Switch']
     },
     {
         slug: 'among-us',
@@ -301,9 +301,104 @@ window.GAMES = [
         description: 'Social deduction game set in space with impostors.',
         genres: ['Social', 'Party'],
         category: 'Casual/Party',
-        platforms: ['PC', 'Mobile', 'Switch', 'PlayStation', 'Xbox']
+        platforms: ['PC', 'Mobile', 'Nintendo Switch', 'PlayStation 5', 'Xbox Series X|S']
     },
     
+    // Survival/Horror Games
+    {
+        slug: 'resident-evil-4-remake',
+        title: 'Resident Evil 4 Remake',
+        image: 'game-images/re4-remake.jpg',
+        description: 'A reimagining of the survival horror classic with modern graphics and gameplay.',
+        genres: ['Survival Horror', 'Action'],
+        category: 'Survival/Horror',
+        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S']
+    },
+    {
+        slug: 'dead-space-remake',
+        title: 'Dead Space Remake',
+        image: 'game-images/dead-space.jpg',
+        description: 'A complete remake of the sci-fi horror classic with stunning visuals.',
+        genres: ['Survival Horror', 'Sci-Fi'],
+        category: 'Survival/Horror',
+        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S']
+    },
+
+    // Fighting Games
+    {
+        slug: 'street-fighter-6',
+        title: 'Street Fighter 6',
+        image: 'game-images/sf6.jpg',
+        description: 'The latest entry in the legendary fighting game series.',
+        genres: ['Fighting', 'Competitive'],
+        category: 'Fighting',
+        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S']
+    },
+    {
+        slug: 'mortal-kombat-1',
+        title: 'Mortal Kombat 1',
+        image: 'game-images/mk1.jpg',
+        description: 'The newest installment in the brutal fighting game franchise.',
+        genres: ['Fighting', 'Gore'],
+        category: 'Fighting',
+        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S', 'Nintendo Switch']
+    },
+
+    // MMORPG Games
+    {
+        slug: 'final-fantasy-xiv',
+        title: 'Final Fantasy XIV: Endwalker',
+        image: 'game-images/ff14.jpg',
+        description: 'The critically acclaimed MMORPG with an expanded free trial.',
+        genres: ['MMORPG', 'RPG'],
+        category: 'MMORPG',
+        platforms: ['PC', 'PlayStation 5']
+    },
+
+    // Roguelike/Roguelite Games
+    {
+        slug: 'hades-2',
+        title: 'Hades II',
+        image: 'game-images/hades-2.jpg',
+        description: 'The god-like rogue-like dungeon crawler returns.',
+        genres: ['Roguelike', 'Action'],
+        category: 'Roguelike/Roguelite',
+        platforms: ['PC', 'Nintendo Switch']
+    },
+
+    // Rhythm/Music Games
+    {
+        slug: 'hi-fi-rush',
+        title: 'Hi-Fi RUSH',
+        image: 'game-images/hifi-rush.jpg',
+        description: 'A rhythm action game where everything moves to the music.',
+        genres: ['Rhythm', 'Action'],
+        category: 'Rhythm/Music',
+        platforms: ['PC', 'Xbox Series X|S']
+    },
+
+    // Visual Novels
+    {
+        slug: 'danganronpa-decadence',
+        title: 'Danganronpa Decadence',
+        image: 'game-images/danganronpa.jpg',
+        description: 'A collection of the murder mystery visual novels.',
+        genres: ['Visual Novel', 'Mystery'],
+        category: 'Visual Novels',
+        platforms: ['Nintendo Switch']
+    },
+
+    // Metroidvania Games
+    {
+        slug: 'hollow-knight-silksong',
+        title: 'Hollow Knight: Silksong',
+        image: 'game-images/silksong.jpg',
+        description: 'The highly anticipated sequel to Hollow Knight.',
+        genres: ['Metroidvania', 'Platformer'],
+        category: 'Metroidvania',
+        platforms: ['PC', 'Nintendo Switch']
+    },
+
     // Simulation/Strategy Games
     {
         slug: 'cities-skylines-2',
@@ -348,7 +443,7 @@ window.GAMES = [
         description: 'Build an empire to stand the test of time.',
         genres: ['Strategy', 'Turn-Based'],
         category: 'Simulation/Strategy',
-        platforms: ['PC', 'PlayStation', 'Xbox', 'Switch']
+        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S', 'Nintendo Switch']
     },
     
     // Indie Games
@@ -359,7 +454,7 @@ window.GAMES = [
         description: 'A beautiful, hand-drawn action-adventure with a vast underground world.',
         genres: ['Metroidvania', 'Action'],
         category: 'Indie',
-        platforms: ['PC', 'PlayStation 4', 'Xbox One', 'Switch']
+        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S', 'Nintendo Switch']
     },
     {
         slug: 'stray',
@@ -377,7 +472,7 @@ window.GAMES = [
         description: 'A platformer about climbing a mountain and overcoming personal struggles.',
         genres: ['Platformer', 'Indie'],
         category: 'Indie',
-        platforms: ['PC', 'PlayStation 4', 'Xbox One', 'Switch']
+        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S', 'Nintendo Switch']
     },
     {
         slug: 'hades-2',
