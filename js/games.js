@@ -5,7 +5,7 @@ window.GAMES = [
         slug: 'roblox',
         title: 'Roblox',
         image: 'game-images/roblox.jpg',
-        description: 'User-generated games platform with endless experiences.',
+        description: 'Roblox is a massive online platform where millions of players come together to imagine, create, and share 3D virtual worlds and experiences. With an intuitive game creation system, players can build anything from obstacle courses to role-playing games, then share their creations with a global community. The platform offers endless variety with games spanning multiple genres, from action-adventure and simulation to role-playing and tycoon games. Regular updates and a thriving community ensure there\'s always something new to discover, making it a favorite among players of all ages who enjoy creativity and social gaming experiences.',
         genres: ['Adventure', 'Social', 'Simulation'],
         categories: ['Adventure', 'Social', 'Simulation', 'Multiplayer', 'User-Generated', 'Free-to-Play', 'Sandbox', 'Cross-Platform'],
         platforms: ['PC', 'Mobile', 'Xbox', 'PlayStation']
@@ -14,7 +14,7 @@ window.GAMES = [
         slug: 'spider-man-2',
         title: 'Marvel\'s Spider-Man 2',
         image: 'game-images/spider-man-2.jpg',
-        description: 'Swing through New York as both Peter Parker and Miles Morales.',
+        description: 'In this highly anticipated sequel, players take on the dual roles of Peter Parker and Miles Morales as they navigate the challenges of being superheroes while balancing their personal lives. The game expands on the beloved web-swinging mechanics and combat system from its predecessors, introducing new abilities for both Spider-Men. The story delves deeper into the characters\' relationships and features a rogues\' gallery of iconic villains. The open-world New York City is more detailed than ever, with dynamic weather, improved graphics, and seamless transitions between the two playable characters. With an emotional narrative and thrilling set pieces, Spider-Man 2 delivers an unforgettable superhero experience.',
         genres: ['Action', 'Open World'],
         categories: ['Action', 'Adventure', 'Open World', 'Superhero'],
         platforms: ['PlayStation']
@@ -300,7 +300,7 @@ window.GAMES = [
         image: 'game-images/among-us.jpg',
         description: 'Social deduction game set in space with impostors.',
         genres: ['Social', 'Party'],
-        category: 'Casual/Party',
+        categories: ['Casual', 'Party', 'Multiplayer', 'Online Multiplayer', 'Social Deduction', 'Indie'],
         platforms: ['PC', 'Mobile', 'Nintendo Switch', 'PlayStation 5', 'Xbox Series X|S']
     },
     
@@ -498,9 +498,9 @@ window.GAMES = [
         platforms: ['PC', 'Xbox', 'Nintendo Switch']
     },
     {
-        slug: 'blasphemous',
-        title: 'Blasphemous',
-        image: 'game-images/blasphemous.jpg',
+        slug: 'blasphemous 2',
+        title: 'Blasphemous 2',
+        image: 'game-images/blasphemous-2.jpg',
         description: 'A brutal action-platformer with a dark fantasy setting.',
         genres: ['Metroidvania', 'Souls-like', 'Action'],
         categories: ['Metroidvania', 'Action', 'Souls-like', 'Pixel Graphics', 'Difficult', 'Dark Fantasy'],

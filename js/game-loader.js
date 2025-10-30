@@ -17,7 +17,19 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (isCategoryPage && currentCategory) {
         filteredGames = window.GAMES.filter(game => {
-            // Check if game has categories array and includes current category
+            // Special handling for Casual/Party category
+            if (currentCategory.toLowerCase() === 'casual/party') {
+                if (game.categories && Array.isArray(game.categories)) {
+                    return game.categories.some(cat => 
+                        cat && (cat.toLowerCase() === 'casual' || cat.toLowerCase() === 'party')
+                    );
+                }
+                return (game.category && (game.category.toLowerCase() === 'casual' || 
+                                        game.category.toLowerCase() === 'party' ||
+                                        game.category.toLowerCase() === 'casual/party'));
+            }
+            
+            // Standard category filtering for all other categories
             if (game.categories && Array.isArray(game.categories)) {
                 return game.categories.some(cat => 
                     cat && cat.toLowerCase() === currentCategory.toLowerCase()
