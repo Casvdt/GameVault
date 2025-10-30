@@ -473,15 +473,6 @@ window.GAMES = [
         genres: ['Platformer', 'Indie'],
         category: 'Indie',
         platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S', 'Nintendo Switch']
-    },
-    {
-        slug: 'hades-2',
-        title: 'Hades II',
-        image: 'game-images/hades-2.jpg',
-        description: 'Roguelike action game with Greek mythology themes.',
-        genres: ['Action', 'Roguelike'],
-        category: 'Indie',
-        platforms: ['PC']
     }
 ];
 
