@@ -39,6 +39,13 @@ function $(selector) {
     return document.querySelector(selector);
 }
 
+function animateCardGrid() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (typeof gsap === 'undefined') return;
+  const cards = document.querySelectorAll('.game-tile');
+  gsap.fromTo(cards, {scale:0.94, opacity:0}, {scale:1, opacity:1, stagger:0.07, duration:0.41, ease:"power2.out"});
+}
+
 function renderGamesGrid() {
     const container = document.createElement('div');
     container.className = 'row g-4';
@@ -73,6 +80,8 @@ function renderGamesGrid() {
         container.appendChild(col);
     });
 
+    // Animate after DOM inserted
+    setTimeout(animateCardGrid, 15);
     return container;
 }
 

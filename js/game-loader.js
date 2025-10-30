@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (filteredGames.length > 0) {
         const gamesGrid = createGamesGrid(filteredGames);
         gamesContainer.appendChild(gamesGrid);
+        animateCardGrid();
     } else {
         gamesContainer.innerHTML = `
             <div class="col-12 text-center text-white py-5">
@@ -322,3 +323,10 @@ function loadGameDetail() {
 window.GameLoader = {
     loadGameDetail
 };
+
+function animateCardGrid() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (typeof gsap === 'undefined') return;
+  const cards = document.querySelectorAll('.game-tile');
+  gsap.fromTo(cards, {scale:0.94, opacity:0}, {scale:1, opacity:1, stagger:0.07, duration:0.41, ease:"power2.out"});
+}

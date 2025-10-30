@@ -49,12 +49,20 @@ function renderConsoleGames(consoleName) {
     mount.appendChild(row);
 }
 
+function animateCardGrid() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (typeof gsap === 'undefined') return;
+  const cards = document.querySelectorAll('.game-tile');
+  gsap.fromTo(cards, {scale:0.94, opacity:0}, {scale:1, opacity:1, stagger:0.07, duration:0.41, ease:"power2.out"});
+}
+
 window.addEventListener('DOMContentLoaded', () => {
     const mount = document.getElementById('category-view');
     if (mount) {
         const consoleName = mount.getAttribute('data-console');
         if (consoleName) {
             renderConsoleGames(consoleName);
+            animateCardGrid();
         }
     }
 });
