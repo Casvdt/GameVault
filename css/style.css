@@ -58,36 +58,25 @@ h6 { font-size: 1rem; }
     transition: all 0.3s ease;
 }
 
-/* Navbar styles for mobile */
+/* Make navbar non-sticky on mobile */
 @media (max-width: 991.98px) {
-    .navbar {
-        position: fixed !important;
-        top: 0;
-        width: 100%;
-        z-index: 1030;
-        transition: transform 0.3s ease-in-out;
-    }
-    
-    .navbar.hide {
-        transform: translateY(-100%);
+    .navbar.fixed-top {
+        position: relative !important;
     }
     
     .main-wrapper {
-        padding-top: 70px !important; /* Height of the navbar */
+        padding-top: 0 !important;
     }
     
     .navbar-toggler {
         margin-right: 1rem;
-        padding: 0.25rem 0.5rem;
     }
     
     .navbar-collapse {
-        background-color: rgba(0, 0, 0, 0.95);
+        background-color: rgba(0, 0, 0, 0.9);
         padding: 1rem;
-        margin-top: 0.5rem;
+        margin-top: 1rem;
         border-radius: 0.5rem;
-        max-height: 70vh;
-        overflow-y: auto;
     }
 }
 
@@ -154,7 +143,7 @@ header .navbar {
     margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
-    max-width: 180px; /* Reduced card width */
+    max-width: 240px; /* Limit card width */
     margin: 0 auto; /* Center cards */
 }
 
@@ -164,8 +153,7 @@ header .navbar {
 }
 
 .game-card .card-img-top {
-    height: 140px; /* Reduced height */
-    width: 100%;
+    height: 200px;
     object-fit: cover;
     object-position: center;
     transition: transform 0.4s ease, filter 0.4s ease;
@@ -245,20 +233,7 @@ header .navbar {
 }
 
 /* Responsive adjustments */
-@media (max-width: 767.98px) {
-    /* Adjust game card size for mobile */
-    .game-card {
-        max-width: 150px;
-    }
-    
-    .game-card .card-img-top {
-        height: 120px;
-    }
-    
-    /* Game detail page adjustments */
-    #game-detail img {
-        max-height: 200px;
-    }
+@media (max-width: 768px) {
     .game-card .card-title {
         font-size: 0.95rem;
     }
