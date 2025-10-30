@@ -1131,3 +1131,60 @@ form[role="search"] .btn {
     display: flex !important;
   }
 } 
+
+@media (max-width: 767.98px) {
+  /* Portrait/square block cards for main, category, and console pages on mobile */
+  #featured-games .row.g-4 > div, 
+  .row.g-4 > .col-12.col-sm-6.col-lg-3, 
+  .categories-page .row.g-4 > div, 
+  .platforms-page .row.g-4 > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 1.3rem;
+  }
+  #featured-games .card, 
+  .row.g-4 > .col-12.col-sm-6.col-lg-3 .card,
+  .categories-page .row.g-4 .card,
+  .platforms-page .row.g-4 .card {
+    width: 90vw;
+    margin: 0 auto 1.2rem auto;
+    border-radius: 12px;
+    aspect-ratio: 4/5;
+    min-height: 210px;
+    box-shadow: 0 1px 7px rgba(0,0,0,0.13);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  #featured-games .card-img-top,
+  .row.g-4 > .col-12.col-sm-6.col-lg-3 .card-img-top,
+  .categories-page .row.g-4 .card-img-top,
+  .platforms-page .row.g-4 .card-img-top {
+    width: 100%;
+    height: 70%;
+    min-height: 100px;
+    object-fit: cover;
+    border-radius: 0 0 10px 10px;
+    display: block;
+  }
+  #featured-games .card .card-body,
+  .row.g-4 > .col-12.col-sm-6.col-lg-3 .card .card-body,
+  .categories-page .row.g-4 .card .card-body,
+  .platforms-page .row.g-4 .card .card-body {
+    padding: 0.6rem 0.8rem 0.8rem 0.8rem;
+    height: 30%;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: transparent;
+    text-align: left;
+  }
+  
+  /* Do not touch game view page (#game-view .card) */
+  #game-view .card { aspect-ratio: unset !important; }
+} 
