@@ -611,5 +611,3 @@ window.GAMES = [
         platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S', 'Nintendo Switch']
     }
 ];
-
-
