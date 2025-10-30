@@ -98,6 +98,136 @@ header .navbar {
     flex: 1;
 }
 
+/* Game Cards Styling */
+.game-card {
+    background: rgba(30, 30, 30, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 240px; /* Limit card width */
+    margin: 0 auto; /* Center cards */
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Image container with taller aspect ratio */
+.game-card-img-container {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Fixed height for images */
+    overflow: hidden;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Image styling */
+.game-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Hover effects */
+.game-card:hover .game-card-img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* Card body - more compact */
+.game-card .card-body {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: rgba(30, 30, 30, 0.9);
+    min-height: 120px; /* Minimum height for text content */
+}
+
+/* Title styling */
+.game-card .card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    color: #fff;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 2.5em;
+    line-height: 1.3;
+}
+
+/* Badges container */
+.game-card .badge-container {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+/* Badge styling */
+.game-card .badge {
+    font-size: 0.65rem;
+    font-weight: 500;
+    padding: 0.35em 0.6em;
+    margin: 0.1em;
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+
+.game-card .badge.bg-secondary {
+    background-color: rgba(102, 22, 22, 0.9) !important;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-card .badge.bg-primary {
+    background-color: rgba(82, 12, 12, 0.9) !important;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Search form styling */
+.navbar form[role="search"] {
+    min-width: 250px;
+}
+
+/* No results message */
+.no-results {
+    text-align: center;
+    padding: 2rem 0;
+    color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .game-card .card-title {
+        font-size: 0.95rem;
+    }
+    
+    .navbar form[role="search"] {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 576px) {
+    .game-card-img-container {
+        padding-top: 75%; /* Slightly taller aspect ratio for mobile */
+    }
+}
+
 /* Card styles for all pages */
 .card {
     border: none;

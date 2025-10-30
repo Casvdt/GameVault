@@ -2,13 +2,22 @@
 window.GAMES = [
     // Action Games
     {
+        slug: 'roblox',
+        title: 'Roblox',
+        image: 'game-images/roblox.jpg',
+        description: 'User-generated games platform with endless experiences.',
+        genres: ['Adventure', 'Social', 'Simulation'],
+        categories: ['Adventure', 'Social', 'Simulation', 'Multiplayer', 'User-Generated', 'Free-to-Play', 'Sandbox', 'Cross-Platform'],
+        platforms: ['PC', 'Mobile', 'Xbox', 'PlayStation']
+    },
+    {
         slug: 'spider-man-2',
         title: 'Marvel\'s Spider-Man 2',
         image: 'game-images/spider-man-2.jpg',
         description: 'Swing through New York as both Peter Parker and Miles Morales.',
         genres: ['Action', 'Open World'],
-        category: 'Action',
-        platforms: ['PlayStation 5']
+        categories: ['Action', 'Adventure', 'Open World', 'Superhero'],
+        platforms: ['PlayStation']
     },
     {
         slug: 'star-wars-jedi-survivor',
@@ -16,8 +25,8 @@ window.GAMES = [
         image: 'game-images/jedi-survivor.jpg',
         description: 'Continue the journey of Cal Kestis in this action-adventure set in the Star Wars universe.',
         genres: ['Action', 'Adventure'],
-        category: 'Action',
-        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S']
+        categories: ['Action', 'Adventure', 'RPG', 'Sci-Fi'],
+        platforms: ['PC', 'PlayStation', 'Xbox']
     },
     {
         slug: 'fortnite',
@@ -25,8 +34,8 @@ window.GAMES = [
         image: 'game-images/fortnite.jpg',
         description: 'Battle royale with building mechanics and seasonal content.',
         genres: ['Battle Royale', 'Shooter'],
-        category: 'Shooter',
-        platforms: ['PC', 'PlayStation', 'Xbox', 'Switch', 'Mobile']
+        categories: ['Shooter', 'Battle Royale', 'Multiplayer', 'Free-to-Play'],
+        platforms: ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch', 'Mobile']
     },
     {
         slug: 'gtav',
@@ -34,7 +43,7 @@ window.GAMES = [
         image: 'game-images/GTAV.jpg',
         description: 'Sprawling open-world action in Los Santos and beyond.',
         genres: ['Action', 'Open World'],
-        category: 'Action',
+        categories: ['Action', 'Open World', 'Adventure', 'Crime', 'Multiplayer'],
         platforms: ['PC', 'PlayStation', 'Xbox']
     },
     {
@@ -43,7 +52,7 @@ window.GAMES = [
         image: 'game-images/elden-ring.jpg',
         description: 'Dark fantasy action RPG with a procedurally generated world.',
         genres: ['Action', 'RPG'],
-        category: 'Action',
+        categories: ['Action', 'RPG', 'Adventure', 'Open World', 'Souls-like', 'Fantasy'],
         platforms: ['PC', 'PlayStation', 'Xbox']
     },
     
@@ -54,8 +63,8 @@ window.GAMES = [
         image: 'game-images/mw3-2023.jpg',
         description: 'The latest installment in the Call of Duty franchise with a new campaign and multiplayer.',
         genres: ['FPS', 'Action'],
-        category: 'Shooter',
-        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S', 'PlayStation 4', 'Xbox One']
+        categories: ['Shooter', 'FPS', 'Action', 'Multiplayer', 'First-Person'],
+        platforms: ['PC', 'PlayStation', 'Xbox']
     },
     {
         slug: 'apex-legends',
@@ -63,8 +72,8 @@ window.GAMES = [
         image: 'game-images/apex-legends.jpg',
         description: 'Free-to-play battle royale hero shooter with unique characters.',
         genres: ['FPS', 'Battle Royale'],
-        category: 'Shooter',
-        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S', 'PlayStation 4', 'Xbox One', 'Switch', 'Mobile']
+        categories: ['Shooter', 'FPS', 'Battle Royale', 'Multiplayer', 'Hero Shooter', 'Free-to-Play', 'Competitive'],
+        platforms: ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch', 'Mobile']
     },
     {
         slug: 'valorant',
@@ -72,7 +81,7 @@ window.GAMES = [
         image: 'game-images/valorant.png',
         description: 'Tactical 5v5 shooter with unique agent abilities.',
         genres: ['FPS', 'Tactical'],
-        category: 'Shooter',
+        categories: ['Shooter', 'FPS', 'Tactical', 'Multiplayer', 'Competitive', 'Hero Shooter', 'Free-to-Play'],
         platforms: ['PC', 'PlayStation', 'Xbox', 'Mobile']
     },
     {
@@ -81,7 +90,7 @@ window.GAMES = [
         image: 'game-images/csgo2.webp',
         description: 'Tactical first-person shooter with competitive gameplay.',
         genres: ['FPS', 'Tactical'],
-        category: 'Shooter',
+        categories: ['Shooter', 'FPS', 'Tactical', 'Multiplayer', 'Competitive', 'First-Person'],
         platforms: ['PC', 'PlayStation', 'Xbox']
     },
     
@@ -92,8 +101,8 @@ window.GAMES = [
         image: 'game-images/god-of-war-ragnarok.jpg',
         description: 'Kratos and Atreus must journey to each of the Nine Realms in search of answers.',
         genres: ['Action', 'Adventure'],
-        category: 'Adventure',
-        platforms: ['PlayStation 5', 'PlayStation 4']
+        categories: ['Adventure', 'Action', 'RPG', 'Single Player', 'Story Rich', 'Open World', 'Fantasy', 'Mythology'],
+        platforms: ['PlayStation', 'PC']
     },
     {
         slug: 'starfield',
@@ -101,8 +110,8 @@ window.GAMES = [
         image: 'game-images/starfield.jpg',
         description: 'Bethesda\'s next-generation role-playing game set in space.',
         genres: ['RPG', 'Open World'],
-        category: 'Adventure',
-        platforms: ['PC', 'Xbox Series X|S']
+        categories: ['Adventure', 'RPG', 'Open World', 'Sci-Fi', 'Single Player', 'Space', 'Exploration', 'First-Person'],
+        platforms: ['PC', 'Xbox']
     },
     {
         slug: 'hogwarts-legacy',
@@ -110,8 +119,8 @@ window.GAMES = [
         image: 'game-images/hogwarts-legacy.png',
         description: 'Open-world RPG set in the wizarding world.',
         genres: ['RPG', 'Open World'],
-        category: 'Adventure',
-        platforms: ['PC', 'PlayStation', 'Xbox']
+        categories: ['Adventure', 'RPG', 'Open World', 'Fantasy', 'Single Player', 'Story Rich', 'Magic', 'Hogwarts'],
+        platforms: ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch']
     },
     {
         slug: 'zelda-tears',
@@ -119,7 +128,7 @@ window.GAMES = [
         image: 'game-images/zelda-tears.jpg',
         description: 'Epic adventure in the kingdom of Hyrule with new abilities.',
         genres: ['Action', 'Adventure'],
-        category: 'Adventure',
+        categories: ['Adventure', 'Action', 'Open World', 'Fantasy', 'Single Player', 'Puzzle', 'Exploration', 'Nintendo'],
         platforms: ['Nintendo Switch']
     },
     
@@ -130,8 +139,8 @@ window.GAMES = [
         image: 'game-images/baldurs-gate-3.jpg',
         description: 'Next-generation RPG set in the world of Dungeons & Dragons.',
         genres: ['RPG', 'Turn-Based'],
-        category: 'RPG',
-        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S']
+        categories: ['RPG', 'Adventure', 'Turn-Based', 'Fantasy', 'Story Rich', 'Single Player', 'Co-op', 'D&D'],
+        platforms: ['PC', 'PlayStation', 'Xbox']
     },
     {
         slug: 'final-fantasy-xvi',
@@ -139,8 +148,8 @@ window.GAMES = [
         image: 'game-images/ff16.jpg',
         description: 'The next mainline entry in the Final Fantasy series.',
         genres: ['RPG', 'Action'],
-        category: 'RPG',
-        platforms: ['PlayStation 5']
+        categories: ['RPG', 'Action', 'Adventure', 'Fantasy', 'Story Rich', 'Single Player', 'JRPG', 'Square Enix'],
+        platforms: ['PlayStation', 'PC']
     },
     {
         slug: 'diablo-iv',
@@ -148,8 +157,8 @@ window.GAMES = [
         image: 'game-images/diablo-iv.jpg',
         description: 'The next installment in the critically acclaimed action RPG series.',
         genres: ['ARPG', 'Hack and Slash'],
-        category: 'RPG',
-        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S', 'PlayStation 4', 'Xbox One']
+        categories: ['RPG', 'Action', 'Hack and Slash', 'Loot', 'Multiplayer', 'Co-op', 'Dark Fantasy', 'Dungeon Crawler'],
+        platforms: ['PC', 'PlayStation', 'Xbox']
     },
     {
         slug: 'cyberpunk-2077',
@@ -157,7 +166,7 @@ window.GAMES = [
         image: 'game-images/cyberpunk-2077.avif',
         description: 'Open-world RPG set in a neon-lit future.',
         genres: ['RPG', 'Open World'],
-        category: 'RPG',
+        categories: ['RPG', 'Action', 'Open World', 'Cyberpunk', 'FPS', 'Story Rich', 'Single Player', 'Sci-Fi'],
         platforms: ['PC', 'PlayStation', 'Xbox']
     },
     
@@ -168,8 +177,8 @@ window.GAMES = [
         image: 'game-images/madden-26.jpg',
         description: 'The latest in the long-running American football video game franchise with enhanced gameplay and graphics.',
         genres: ['Sports', 'Simulation'],
-        category: 'Sports',
-        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S']
+        categories: ['Sports', 'Football', 'Simulation', 'Multiplayer', 'Sports Simulation', 'Competitive', 'Online Multiplayer', 'EA Sports'],
+        platforms: ['PC', 'PlayStation', 'Xbox']
     },
     {
         slug: 'ea-fc-26',
@@ -177,8 +186,8 @@ window.GAMES = [
         image: 'game-images/eafc26.avif',
         description: 'The latest football simulation with improved gameplay and realism.',
         genres: ['Sports', 'Simulation'],
-        category: 'Sports',
-        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S', 'PlayStation 4', 'Xbox One', 'Switch']
+        categories: ['Sports', 'Football', 'Simulation', 'Multiplayer', 'Sports Simulation', 'Competitive', 'Online Multiplayer', 'EA Sports'],
+        platforms: ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch']
     },
     {
         slug: 'nba-2k26',
@@ -186,7 +195,7 @@ window.GAMES = [
         image: 'game-images/nba-2k26.jpg',
         description: 'Basketball simulation with realistic gameplay.',
         genres: ['Sports', 'Simulation'],
-        category: 'Sports',
+        categories: ['Sports', 'Basketball', 'Simulation', 'Multiplayer', 'Sports Simulation', 'Competitive', 'Online Multiplayer', '2K Sports'],
         platforms: ['PC', 'PlayStation', 'Xbox']
     },
     
@@ -197,8 +206,8 @@ window.GAMES = [
         image: 'game-images/forza-motorsport.jpg',
         description: 'The next generation of Forza Motorsport with advanced physics and graphics.',
         genres: ['Racing', 'Simulation'],
-        category: 'Racing',
-        platforms: ['PC', 'Xbox Series X|S']
+        categories: ['Racing', 'Simulation', 'Driving', 'Multiplayer', 'Sports', 'Realistic', 'Competitive', 'Xbox Game Studios'],
+        platforms: ['PC', 'Xbox']
     },
     {
         slug: 'gran-turismo-7',
@@ -206,8 +215,8 @@ window.GAMES = [
         image: 'game-images/gran-turismo-7.jpg',
         description: 'The latest entry in the legendary racing simulator series.',
         genres: ['Racing', 'Simulation'],
-        category: 'Racing',
-        platforms: ['PlayStation 5', 'PlayStation 4']
+        categories: ['Racing', 'Simulation', 'Driving', 'Sports', 'Realistic', 'Competitive', 'PlayStation Exclusive', 'Sony'],
+        platforms: ['PlayStation']
     },
     {
         slug: 'forza-horizon-5',
@@ -215,7 +224,7 @@ window.GAMES = [
         image: 'game-images/forza-horizon-5.jpg',
         description: 'Open-world racing game set in Mexico.',
         genres: ['Racing', 'Open World'],
-        category: 'Racing',
+        categories: ['Racing', 'Open World', 'Driving', 'Multiplayer', 'Sports', 'Arcade', 'Exploration', 'Xbox Game Studios'],
         platforms: ['PC', 'Xbox']
     },
     {
@@ -224,28 +233,19 @@ window.GAMES = [
         image: 'game-images/f1-25.jpg',
         description: 'Official Formula 1 racing simulation.',
         genres: ['Racing', 'Simulation'],
-        category: 'Racing',
+        categories: ['Racing', 'Simulation', 'Sports', 'Formula 1', 'Multiplayer', 'Competitive', 'Realistic', 'EA Sports'],
         platforms: ['PC', 'PlayStation', 'Xbox']
     },
     
     // Puzzle Games
-    {
-        slug: 'portal-2',
-        title: 'Portal 2',
-        image: 'game-images/portal-2.jpg',
-        description: 'The sequel to the award-winning first-person puzzle game.',
-        genres: ['Puzzle', 'First-Person'],
-        category: 'Puzzle',
-        platforms: ['PC', 'PlayStation 3', 'Xbox 360', 'Switch']
-    },
     {
         slug: 'the-witness',
         title: 'The Witness',
         image: 'game-images/the-witness.jpg',
         description: 'A single-player puzzle game in an open world.',
         genres: ['Puzzle', 'Exploration'],
-        category: 'Puzzle',
-        platforms: ['PC', 'PlayStation 4', 'Xbox One', 'Switch', 'iOS']
+        categories: ['Puzzle', 'Exploration', 'First-Person', 'Open World', 'Single Player', 'Indie', 'Brain Teaser', 'Atmospheric'],
+        platforms: ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch', 'iOS']
     },
     {
         slug: 'it-takes-two',
@@ -253,8 +253,8 @@ window.GAMES = [
         image: 'game-images/it-takes-two.jpg',
         description: 'Co-op adventure with innovative puzzle mechanics.',
         genres: ['Puzzle', 'Adventure'],
-        category: 'Puzzle',
-        platforms: ['PC', 'PlayStation', 'Xbox']
+        categories: ['Puzzle', 'Adventure', 'Co-op', 'Multiplayer', 'Split Screen', 'Story Rich', 'Platformer', 'EA Originals'],
+        platforms: ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch']
     },
     {
         slug: 'tetris-effect',
@@ -262,8 +262,8 @@ window.GAMES = [
         image: 'game-images/tetris-effect.jpg',
         description: 'Classic Tetris with stunning visual effects.',
         genres: ['Puzzle', 'Arcade'],
-        category: 'Puzzle',
-        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S', 'Nintendo Switch']
+        categories: ['Puzzle', 'Arcade', 'Music', 'Relaxing', 'Single Player', 'Multiplayer', 'VR', 'Rhythm'],
+        platforms: ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch']
     },
     
     // Casual/Party Games
@@ -273,8 +273,8 @@ window.GAMES = [
         image: 'game-images/fall-guys.jpg',
         description: 'Battle royale party game with wacky obstacle courses.',
         genres: ['Party', 'Battle Royale'],
-        category: 'Casual/Party',
-        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S', 'Nintendo Switch']
+        categories: ['Casual', 'Party', 'Battle Royale', 'Multiplayer', 'Online Multiplayer', 'Competitive', 'Free-to-Play', 'Minigames'],
+        platforms: ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch']
     },
     {
         slug: 'overcooked-2',
@@ -282,8 +282,8 @@ window.GAMES = [
         image: 'game-images/overcooked-2.jpg',
         description: 'Chaotic cooking simulation game for up to 4 players.',
         genres: ['Party', 'Simulation'],
-        category: 'Casual/Party',
-        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S', 'Nintendo Switch']
+        categories: ['Casual', 'Party', 'Simulation', 'Co-op', 'Multiplayer', 'Local Multiplayer', 'Cooking', 'Chaotic'],
+        platforms: ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch']
     },
     {
         slug: 'mario-kart-8-deluxe',
@@ -291,7 +291,7 @@ window.GAMES = [
         image: 'game-images/mario-kart-8-deluxe.jpg',
         description: 'The definitive version of Mario Kart 8 with all DLC included.',
         genres: ['Racing', 'Party'],
-        category: 'Casual/Party',
+        categories: ['Casual', 'Party', 'Racing', 'Multiplayer', 'Local Multiplayer', 'Family Friendly', 'Nintendo', 'Arcade'],
         platforms: ['Nintendo Switch']
     },
     {
@@ -311,8 +311,8 @@ window.GAMES = [
         image: 'game-images/re4-remake.jpg',
         description: 'A reimagining of the survival horror classic with modern graphics and gameplay.',
         genres: ['Survival Horror', 'Action'],
-        category: 'Survival/Horror',
-        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S']
+        categories: ['Survival/Horror', 'Action', 'Remake', 'Zombies', 'Third-Person'],
+        platforms: ['PC', 'PlayStation', 'Xbox']
     },
     {
         slug: 'dead-space-remake',
@@ -320,10 +320,28 @@ window.GAMES = [
         image: 'game-images/dead-space.jpg',
         description: 'A complete remake of the sci-fi horror classic with stunning visuals.',
         genres: ['Survival Horror', 'Sci-Fi'],
-        category: 'Survival/Horror',
-        platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S']
+        categories: ['Survival/Horror', 'Sci-Fi', 'Action', 'Remake', 'Space', 'Third-Person'],
+        platforms: ['PC', 'PlayStation', 'Xbox']
     },
-
+    {
+        slug: 'alien-isolation',
+        title: 'Alien: Isolation',
+        image: 'game-images/alien-isolation.jpg',
+        description: 'Survival horror set 15 years after the original Alien film.',
+        genres: ['Survival Horror', 'Stealth'],
+        categories: ['Survival/Horror', 'Sci-Fi', 'Stealth', 'First-Person', 'Atmospheric'],
+        platforms: ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch']
+    },
+    {
+        slug: 'phasmophobia',
+        title: 'Phasmophobia',
+        image: 'game-images/phasmophobia.jpg',
+        description: 'Co-op psychological horror where you hunt ghosts with friends.',
+        genres: ['Horror', 'Co-op'],
+        categories: ['Survival/Horror', 'Multiplayer', 'Co-op', 'First-Person', 'Procedural Generation'],
+        platforms: ['PC', 'PlayStation', 'Xbox']
+    },
+    
     // Fighting Games
     {
         slug: 'street-fighter-6',
@@ -362,8 +380,35 @@ window.GAMES = [
         image: 'game-images/hades-2.jpg',
         description: 'The god-like rogue-like dungeon crawler returns.',
         genres: ['Roguelike', 'Action'],
-        category: 'Roguelike/Roguelite',
+        categories: ['Roguelike/Roguelite', 'Action', 'Dungeon Crawler', 'Greek Mythology', 'Single Player', 'Procedural Generation'],
         platforms: ['PC', 'Nintendo Switch']
+    },
+    {
+        slug: 'dead-cells',
+        title: 'Dead Cells',
+        image: 'game-images/dead-cells.jpg',
+        description: 'Rogue-lite, metroidvania inspired, action-platformer.',
+        genres: ['Roguelike', 'Metroidvania', 'Action'],
+        categories: ['Roguelike/Roguelite', 'Action', 'Platformer', 'Procedural Generation', 'Single Player', 'Difficult'],
+        platforms: ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch', 'Mobile']
+    },
+    {
+        slug: 'returnal',
+        title: 'Returnal',
+        image: 'game-images/returnal.jpg',
+        description: 'Third-person shooter roguelike with intense action and a haunting story.',
+        genres: ['Roguelike', 'Third-Person Shooter'],
+        categories: ['Roguelike/Roguelite', 'Action', 'Bullet Hell', 'Sci-Fi', 'Single Player', 'Psychological Horror'],
+        platforms: ['PC', 'PlayStation']
+    },
+    {
+        slug: 'slay-the-spire',
+        title: 'Slay the Spire',
+        image: 'game-images/slay-the-spire.jpg',
+        description: 'Deck-building roguelike with strategic card battles.',
+        genres: ['Roguelike', 'Deck-Building', 'Strategy'],
+        categories: ['Roguelike/Roguelite', 'Card Game', 'Turn-Based', 'Single Player', 'Procedural Generation'],
+        platforms: ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch', 'Mobile']
     },
 
     // Rhythm/Music Games
@@ -373,8 +418,26 @@ window.GAMES = [
         image: 'game-images/hifi-rush.jpg',
         description: 'A rhythm action game where everything moves to the music.',
         genres: ['Rhythm', 'Action'],
-        category: 'Rhythm/Music',
-        platforms: ['PC', 'Xbox Series X|S']
+        categories: ['Rhythm/Music', 'Action', 'Adventure', 'Single Player', 'Stylized', 'Music-Based'],
+        platforms: ['PC', 'Xbox']
+    },
+    {
+        slug: 'beat-saber',
+        title: 'Beat Saber',
+        image: 'game-images/beat-saber.jpg',
+        description: 'VR rhythm game where you slash the beats of adrenaline-pumping music.',
+        genres: ['Rhythm', 'VR', 'Music'],
+        categories: ['Rhythm/Music', 'VR', 'Music-Based', 'Rhythm', 'Exercise', 'Party'],
+        platforms: ['PC', 'PlayStation', 'Oculus']
+    },
+    {
+        slug: 'osu',
+        title: 'osu!',
+        image: 'game-images/osu.jpg',
+        description: 'Rhythm game where you click circles to the beat of the music.',
+        genres: ['Rhythm', 'Music'],
+        categories: ['Rhythm/Music', 'Free-to-Play', 'Music-Based', 'Multiplayer', 'Competitive'],
+        platforms: ['PC', 'Mobile']
     },
 
     // Visual Novels
@@ -384,8 +447,35 @@ window.GAMES = [
         image: 'game-images/danganronpa.jpg',
         description: 'A collection of the murder mystery visual novels.',
         genres: ['Visual Novel', 'Mystery'],
-        category: 'Visual Novels',
-        platforms: ['Nintendo Switch']
+        categories: ['Visual Novels', 'Murder Mystery', 'Anime', 'Story Rich', 'Multiple Endings'],
+        platforms: ['PC', 'PlayStation', 'Nintendo Switch', 'Mobile']
+    },
+    {
+        slug: 'doki-doki-literature-club-plus',
+        title: 'Doki Doki Literature Club Plus!',
+        image: 'game-images/ddlc-plus.jpg',
+        description: 'Psychological horror disguised as a dating sim visual novel.',
+        genres: ['Visual Novel', 'Horror', 'Psychological'],
+        categories: ['Visual Novels', 'Psychological Horror', 'Dating Sim', 'Multiple Endings', 'Meta'],
+        platforms: ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch']
+    },
+    {
+        slug: 'steins-gate',
+        title: 'Steins;Gate',
+        image: 'game-images/steins-gate.jpg',
+        description: 'Time travel visual novel with multiple endings.',
+        genres: ['Visual Novel', 'Sci-Fi', 'Drama'],
+        categories: ['Visual Novels', 'Sci-Fi', 'Time Travel', 'Anime', 'Multiple Endings', 'Story Rich'],
+        platforms: ['PC', 'PlayStation', 'Nintendo Switch', 'Mobile']
+    },
+    {
+        slug: 'the-house-in-fata-morgana',
+        title: 'The House in Fata Morgana',
+        image: 'game-images/fata-morgana.jpg',
+        description: 'Gothic horror visual novel spanning nearly a millennium.',
+        genres: ['Visual Novel', 'Horror', 'Drama'],
+        categories: ['Visual Novels', 'Gothic', 'Horror', 'Tragedy', 'Story Rich', 'Multiple Endings'],
+        platforms: ['PC', 'PlayStation', 'Nintendo Switch', 'Mobile']
     },
 
     // Metroidvania Games
@@ -395,8 +485,35 @@ window.GAMES = [
         image: 'game-images/silksong.jpg',
         description: 'The highly anticipated sequel to Hollow Knight.',
         genres: ['Metroidvania', 'Platformer'],
-        category: 'Metroidvania',
+        categories: ['Metroidvania', 'Platformer', 'Action-Adventure', 'Single Player', 'Hand-drawn', 'Souls-like'],
         platforms: ['PC', 'Nintendo Switch']
+    },
+    {
+        slug: 'ori-and-the-will-of-the-wisps',
+        title: 'Ori and the Will of the Wisps',
+        image: 'game-images/ori-2.jpg',
+        description: 'A beautiful, emotional journey through a stunning hand-painted world.',
+        genres: ['Metroidvania', 'Platformer', 'Adventure'],
+        categories: ['Metroidvania', 'Platformer', 'Adventure', 'Single Player', 'Hand-drawn', 'Emotional'],
+        platforms: ['PC', 'Xbox', 'Nintendo Switch']
+    },
+    {
+        slug: 'blasphemous',
+        title: 'Blasphemous',
+        image: 'game-images/blasphemous.jpg',
+        description: 'A brutal action-platformer with a dark fantasy setting.',
+        genres: ['Metroidvania', 'Souls-like', 'Action'],
+        categories: ['Metroidvania', 'Action', 'Souls-like', 'Pixel Graphics', 'Difficult', 'Dark Fantasy'],
+        platforms: ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch']
+    },
+    {
+        slug: 'bloodstained-ritual-of-the-night',
+        title: 'Bloodstained: Ritual of the Night',
+        image: 'game-images/bloodstained.jpg',
+        description: 'A gothic, exploration-focused action RPG from the creator of Castlevania.',
+        genres: ['Metroidvania', 'Action', 'RPG'],
+        categories: ['Metroidvania', 'Action RPG', 'Gothic', 'Exploration', 'Single Player', 'Side Scroller'],
+        platforms: ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch']
     },
 
     // Simulation/Strategy Games
