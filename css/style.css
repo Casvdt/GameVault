@@ -23,15 +23,6 @@ body {
     line-height: 1.5;
 }
 
-body.hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 4rem 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    color: white;
-}
-
 .main-wrapper {
     flex: 1 0 auto;
     width: 100%;
@@ -152,8 +143,20 @@ header .navbar {
     flex: 1;
 }
 
-/* Game Cards Styling - Moved to game-cards.css */
-@import 'game-cards.css';
+/* Game Cards Styling */
+.game-card {
+    background: rgba(30, 30, 30, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 180px; /* Reduced card width */
+    margin: 0 auto; /* Center cards */
+}
 
 .game-card:hover {
     transform: translateY(-5px);
@@ -161,12 +164,11 @@ header .navbar {
 }
 
 .game-card .card-img-top {
-    height: 100px; /* Reduced height */
+    height: 140px; /* Reduced height */
     width: 100%;
     object-fit: cover;
-    object-position: center top; /* Align to top of container */
+    object-position: center;
     transition: transform 0.4s ease, filter 0.4s ease;
-    margin: 0; /* Remove white space above images */
 }
 
 /* Hover effects */
@@ -246,37 +248,16 @@ header .navbar {
 @media (max-width: 767.98px) {
     /* Adjust game card size for mobile */
     .game-card {
-        max-width: 140px;
-        margin-bottom: 1rem;
+        max-width: 150px;
     }
     
     .game-card .card-img-top {
-        height: 100px;
+        height: 120px;
     }
     
-    .game-card .card-body {
-        padding: 0.75rem;
-    }
-    
-    .game-card .card-title {
-        font-size: 0.85rem;
-        margin-bottom: 0.25rem;
-    }
-    
-    .game-card .card-text {
-        display: none; /* Hide description on mobile */
-    }
-    
-    .platform-badge {
-        font-size: 0.6rem;
-        padding: 0.15rem 0.35rem;
-        margin-right: 0.25rem;
-        margin-bottom: 0.25rem;
-    }
-    
-    .featured-games h2 {
-        font-size: 1.25rem;
-        margin-bottom: 1rem;
+    /* Game detail page adjustments */
+    #game-detail img {
+        max-height: 200px;
     }
     .game-card .card-title {
         font-size: 0.95rem;
