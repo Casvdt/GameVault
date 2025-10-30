@@ -908,3 +908,226 @@ form[role="search"] .btn {
 .card-body {
     background-color: var(--site-background);
 }
+
+/* Extra mobile optimizations */
+@media (max-width: 600px) {
+  .container, .main-wrapper {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    max-width: 100vw !important;
+  }
+  .main-wrapper {
+    box-shadow: none;
+    padding-top: 56px !important; /* Account for mobile nav height if sticky */
+    min-height: unset !important;
+  }
+  .games-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.7rem !important;
+    padding: 0.5rem 0 !important;
+  }
+  .game-card .game-card-img-container, .card-img-container {
+    height: 180px !important;
+    min-height: 120px;
+    max-height: 30vw;
+  }
+  .game-card .card-body {
+    padding: 0.7rem !important;
+  }
+  h1, .page-header h1 {
+    font-size: 1.4rem !important;
+  }
+  h2 {
+    font-size: 1.1rem !important;
+  }
+  .btn, .form-control {
+    font-size: 1rem !important;
+    padding: 0.7rem 0.9rem !important;
+    height: 40px !important;
+  }
+  .navbar {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    min-height: 48px;
+  }
+  .navbar-collapse {
+    padding: 0.3rem 0.5rem 0.5rem !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar.fixed-top, .navbar.sticky-top, header .navbar {
+    position: static !important;
+    top: unset !important;
+    left: unset !important;
+    transform: none !important;
+    width: 100%;
+    max-width: none;
+    z-index: 1050;
+  }
+  .mobile-navbar {
+    background: rgba(32, 5, 5, 0.97);
+    min-height: 44px;
+    height: 44px;
+    padding: 0 0.7rem;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+    box-shadow: 0 1px 7px rgba(0,0,0,0.13);
+  }
+  .navbar-toggler-mobile, .navbar-search-mobile {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.65rem;
+    padding: 0 0.3rem;
+    line-height: 1;
+    outline: none;
+  }
+  .navbar-logo-mobile {
+    display: block;
+    width: 120px;
+    height: 28px;
+    background: none;
+  }
+  .mobile-overlay {
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: rgba(10,3,3,0.97);
+    z-index: 50000;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 0;
+    animation: fadeInOverlay 0.35s;
+  }
+  .mobile-overlay.active {
+    display: flex;
+  }
+  @keyframes fadeInOverlay {
+    from { opacity:0; }
+    to { opacity: 1; }
+  }
+  .mobile-overlay-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1rem 0.2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.09);
+    background: none;
+  }
+  .close-menu-btn {
+    background: none;
+    border: none;
+    font-size: 1.85rem;
+    color: #fff;
+    padding: 0 0.1rem;
+  }
+  .mobile-search-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+  }
+  .mobile-search-form .form-control {
+    min-width: 0;
+    font-size: 1rem;
+  }
+  .mobile-nav-list {
+    list-style: none;
+    margin: 0; padding: 2.2rem 1.2rem 1rem;
+    font-size: 1.1rem;
+  }
+  .mobile-nav-link {
+    color: #fff;
+    display: block;
+    padding: 0.8rem 0;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255,255,255,0.10);
+  }
+  .mobile-dropdown { margin-bottom: 1rem; }
+  .mobile-dropdown > .dropdown-toggle {
+    background: none; border: none; color: #fff; font-weight: 600; cursor: pointer; width: 100%; text-align: left; padding: 0.8rem 0; font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .dropdown-list {
+    display: none;
+    padding-left: 1rem;
+    margin: 0;
+    background: none;
+  }
+  .mobile-dropdown.open .dropdown-list {
+    display: block;
+  }
+  .dropdown-list li {
+    margin-bottom: 0.6rem;
+  }
+  .dropdown-list a {
+    color: #ddd;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+    padding: 0.3rem 0;
+  }
+  .dropdown-list a:hover {
+    color: #fff;
+    font-weight: 700;
+  }
+  /* Smaller featured cards */
+  #featured-games .card, .row.g-4 > .col-12.col-sm-6.col-lg-3 .card {
+    max-width: 92vw;
+    min-width: 0;
+    height: 135px !important;
+    border-radius: 10px;
+    margin: 0 auto 0.8rem auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #featured-games .card-img-top, .row.g-4 > .col-12.col-sm-6.col-lg-3 .card-img-top {
+    height: 120px !important;
+    width: auto;
+    max-width: 90vw;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+} 
+
+@media (max-width: 767.98px) {
+  /* Hide DESKTOP nav on mobile, show only mobile bar/overlay */
+  .navbar:not(.mobile-navbar),
+  .navbar-expand-lg:not(.mobile-navbar),
+  .navbar-nav,
+  .navbar-brand,
+  form[role="search"]:not(.mobile-search-form),
+  .header-img {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .mobile-navbar { display: flex !important; }
+  #mobile-overlay { display: none; }
+  #mobile-overlay.active { display: flex !important; }
+}
+@media (min-width: 768px) {
+  /* Hide MOBILE nav/overlay on desktop/tablet */
+  .mobile-navbar,
+  #mobile-overlay {
+    display: none !important;
+  }
+  .navbar,
+  .navbar-expand-lg {
+    display: flex !important;
+  }
+} 
