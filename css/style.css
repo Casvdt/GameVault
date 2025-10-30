@@ -23,6 +23,15 @@ body {
     line-height: 1.5;
 }
 
+body.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 4rem 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+}
+
 .main-wrapper {
     flex: 1 0 auto;
     width: 100%;
@@ -58,25 +67,36 @@ h6 { font-size: 1rem; }
     transition: all 0.3s ease;
 }
 
-/* Make navbar non-sticky on mobile */
+/* Navbar styles for mobile */
 @media (max-width: 991.98px) {
-    .navbar.fixed-top {
-        position: relative !important;
+    .navbar {
+        position: fixed !important;
+        top: 0;
+        width: 100%;
+        z-index: 1030;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .navbar.hide {
+        transform: translateY(-100%);
     }
     
     .main-wrapper {
-        padding-top: 0 !important;
+        padding-top: 70px !important; /* Height of the navbar */
     }
     
     .navbar-toggler {
         margin-right: 1rem;
+        padding: 0.25rem 0.5rem;
     }
     
     .navbar-collapse {
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.95);
         padding: 1rem;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         border-radius: 0.5rem;
+        max-height: 70vh;
+        overflow-y: auto;
     }
 }
 
@@ -133,6 +153,7 @@ header .navbar {
 }
 
 /* Game Cards Styling */
+/* Game Cards */
 .game-card {
     background: rgba(30, 30, 30, 0.9);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -143,7 +164,7 @@ header .navbar {
     margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
-    max-width: 240px; /* Limit card width */
+    max-width: 140px; /* Reduced card width */
     margin: 0 auto; /* Center cards */
 }
 
@@ -153,10 +174,12 @@ header .navbar {
 }
 
 .game-card .card-img-top {
-    height: 200px;
+    height: 100px; /* Reduced height */
+    width: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: center top; /* Align to top of container */
     transition: transform 0.4s ease, filter 0.4s ease;
+    margin: 0; /* Remove white space above images */
 }
 
 /* Hover effects */
@@ -233,7 +256,41 @@ header .navbar {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
+    /* Adjust game card size for mobile */
+    .game-card {
+        max-width: 140px;
+        margin-bottom: 1rem;
+    }
+    
+    .game-card .card-img-top {
+        height: 100px;
+    }
+    
+    .game-card .card-body {
+        padding: 0.75rem;
+    }
+    
+    .game-card .card-title {
+        font-size: 0.85rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .game-card .card-text {
+        display: none; /* Hide description on mobile */
+    }
+    
+    .platform-badge {
+        font-size: 0.6rem;
+        padding: 0.15rem 0.35rem;
+        margin-right: 0.25rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .featured-games h2 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
     .game-card .card-title {
         font-size: 0.95rem;
     }
