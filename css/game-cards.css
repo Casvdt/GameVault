@@ -1,0 +1,115 @@
+/* Game Cards Styling */
+.game-card {
+    background: rgba(30, 30, 30, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.game-card .game-card-img-container {
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+    overflow: hidden;
+}
+
+.game-card .game-card-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover .game-card-img {
+    transform: scale(1.05);
+}
+
+.game-card .card-body {
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.game-card .card-title {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.game-card .badge {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.4rem;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .game-card .card-title {
+        font-size: 0.85rem;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+    
+    .game-card .badge {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.35rem;
+    }
+    
+    .game-card .game-card-img-container {
+        padding-top: 56.25%; /* Maintain aspect ratio */
+    }
+}
+
+/* Homepage featured games specific */
+#featured-games .game-card {
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+#featured-games .game-card .game-card-img-container {
+    padding-top: 150%; /* Taller aspect ratio for featured games */
+}
+
+/* Category/Platform pages specific */
+#games-container .game-card {
+    max-width: 100%;
+}
+
+#games-container .game-card .game-card-img-container {
+    padding-top: 56.25%; /* Standard 16:9 for category pages */
+}
+
+/* Ensure cards in grid are properly sized */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+/* Remove any default margins/padding that might cause gaps */
+.row.g-4 {
+    margin: 0;
+    padding: 0 0.5rem;
+}
+
+.row.g-4 > [class*='col-'] {
+    padding: 0.25rem;
+}

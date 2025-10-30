@@ -152,21 +152,8 @@ header .navbar {
     flex: 1;
 }
 
-/* Game Cards Styling */
-/* Game Cards */
-.game-card {
-    background: rgba(30, 30, 30, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    height: 100%;
-    margin-bottom: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    max-width: 140px; /* Reduced card width */
-    margin: 0 auto; /* Center cards */
-}
+/* Game Cards Styling - Moved to game-cards.css */
+@import 'game-cards.css';
 
 .game-card:hover {
     transform: translateY(-5px);
