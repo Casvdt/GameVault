@@ -28,18 +28,22 @@ function renderCategory(category) {
         a.className = 'text-decoration-none text-reset d-block';
 
         const card = document.createElement('div');
-        card.className = 'card h-100';
+        card.className = 'card game-tile h-100';
 
-        // Wrap image in a container for portrait/aspect fit
-        const imgContainer = document.createElement('div');
-        imgContainer.className = 'card-img-container';
         const img = document.createElement('img');
         img.className = 'card-img-top';
         img.src = base + game.image;
         img.alt = game.title;
-        imgContainer.appendChild(img);
 
-        card.appendChild(imgContainer);
+        const cardBody = document.createElement('div');
+        cardBody.className = 'card-body';
+        const title = document.createElement('h5');
+        title.className = 'card-title';
+        title.textContent = game.title;
+        cardBody.appendChild(title);
+
+        card.appendChild(img);
+        card.appendChild(cardBody);
         a.appendChild(card);
         col.appendChild(a);
         row.appendChild(col);

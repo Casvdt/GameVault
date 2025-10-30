@@ -23,24 +23,23 @@ function renderConsoleGames(consoleName) {
         games.forEach(game => {
             const col = document.createElement('div');
             col.className = 'col-12 col-sm-6 col-lg-3';
-
             const a = document.createElement('a');
             a.href = `${linkBase}?slug=${encodeURIComponent(game.slug)}`;
             a.className = 'text-decoration-none text-reset d-block';
-
             const card = document.createElement('div');
-            card.className = 'card h-100';
-
-            // Img wrapper for mobile portrait/aspect CSS
-            const imgContainer = document.createElement('div');
-            imgContainer.className = 'card-img-container';
+            card.className = 'card game-tile h-100';
             const img = document.createElement('img');
             img.className = 'card-img-top';
             img.src = base + game.image;
             img.alt = game.title;
-            imgContainer.appendChild(img);
-
-            card.appendChild(imgContainer);
+            const cardBody = document.createElement('div');
+            cardBody.className = 'card-body';
+            const title = document.createElement('h5');
+            title.className = 'card-title';
+            title.textContent = game.title;
+            cardBody.appendChild(title);
+            card.appendChild(img);
+            card.appendChild(cardBody);
             a.appendChild(card);
             col.appendChild(a);
             row.appendChild(col);

@@ -48,18 +48,26 @@ function renderGamesGrid() {
         col.className = 'col-12 col-sm-6 col-lg-3';
 
         const link = document.createElement('a');
-        link.href = `#/game/${game.slug}`;
+        link.href = `html/game.html?slug=${game.slug}`;
         link.className = 'text-decoration-none text-reset d-block';
 
         const card = document.createElement('div');
-        card.className = 'card h-100';
+        card.className = 'card game-tile h-100';
 
         const img = document.createElement('img');
         img.className = 'card-img-top';
         img.src = game.image;
         img.alt = game.title;
 
+        const cardBody = document.createElement('div');
+        cardBody.className = 'card-body';
+        const title = document.createElement('h5');
+        title.className = 'card-title';
+        title.textContent = game.title;
+        cardBody.appendChild(title);
+
         card.appendChild(img);
+        card.appendChild(cardBody);
         link.appendChild(card);
         col.appendChild(link);
         container.appendChild(col);
