@@ -167,7 +167,7 @@ window.GAMES = [
         description: 'Open-world RPG set in a neon-lit future.',
         genres: ['RPG', 'Open World'],
         categories: ['RPG', 'Action', 'Open World', 'Cyberpunk', 'FPS', 'Story Rich', 'Single Player', 'Sci-Fi'],
-        platforms: ['PC', 'PlayStation', 'Xbox']
+        platforms: ['PC', 'PlayStation', 'Xbox', 'Cloud Gaming']
     },
     
     // Sports Games
@@ -225,7 +225,7 @@ window.GAMES = [
         description: 'Open-world racing game set in Mexico.',
         genres: ['Racing', 'Open World'],
         categories: ['Racing', 'Open World', 'Driving', 'Multiplayer', 'Sports', 'Arcade', 'Exploration', 'Xbox Game Studios'],
-        platforms: ['PC', 'Xbox']
+        platforms: ['PC', 'Xbox', 'Cloud Gaming']
     },
     {
         slug: 'f1-25',
@@ -421,14 +421,33 @@ window.GAMES = [
         categories: ['Rhythm/Music', 'Action', 'Adventure', 'Single Player', 'Stylized', 'Music-Based'],
         platforms: ['PC', 'Xbox']
     },
+    // VR/AR Games
     {
         slug: 'beat-saber',
         title: 'Beat Saber',
         image: 'game-images/beat-saber.jpg',
-        description: 'VR rhythm game where you slash the beats of adrenaline-pumping music.',
-        genres: ['Rhythm', 'VR', 'Music'],
-        categories: ['Rhythm/Music', 'VR', 'Music-Based', 'Rhythm', 'Exercise', 'Party'],
-        platforms: ['PC', 'PlayStation', 'Oculus']
+        description: 'A VR rhythm game where you slash the beats of adrenaline-pumping music. With its intuitive gameplay and growing library of songs, Beat Saber has become one of the most popular VR games. Custom song support and regular updates keep the experience fresh and engaging.',
+        genres: ['Rhythm', 'VR', 'Music', 'Exercise'],
+        categories: ['Rhythm/Music', 'VR/AR', 'Music-Based', 'Rhythm', 'Exercise', 'Party'],
+        platforms: ['VR/AR', 'PC', 'PlayStation', 'Oculus']
+    },
+    {
+        slug: 'half-life-alyx',
+        title: 'Half-Life: Alyx',
+        image: 'game-images/half-life-alyx.jpg',
+        description: 'VR game set between the events of Half-Life and Half-Life 2. Experience the next generation of VR gaming with this groundbreaking title that sets a new standard for virtual reality experiences. With innovative physics-based interactions and immersive environments.',
+        genres: ['FPS', 'VR', 'Sci-Fi', 'Action'],
+        categories: ['Shooter', 'VR/AR', 'Sci-Fi', 'Single Player', 'Story Rich', 'First-Person'],
+        platforms: ['VR/AR', 'PC']
+    },
+    {
+        slug: 'superhot-vr',
+        title: 'SUPERHOT VR',
+        image: 'game-images/superhot-vr.jpg',
+        description: 'The VR version of the award-winning first-person shooter where time moves only when you move. This innovative gameplay mechanic creates intense, strategic combat scenarios that feel like you\'re in an action movie.',
+        genres: ['FPS', 'VR', 'Action', 'Puzzle'],
+        categories: ['Shooter', 'VR/AR', 'Action', 'Puzzle', 'First-Person', 'Single Player'],
+        platforms: ['VR/AR', 'PC', 'PlayStation']
     },
     {
         slug: 'osu',
