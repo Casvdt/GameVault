@@ -1188,3 +1188,25 @@ form[role="search"] .btn {
   /* Do not touch game view page (#game-view .card) */
   #game-view .card { aspect-ratio: unset !important; }
 } 
+
+/* Custom styling for detail page platform badges and Back button */
+#game-detail .badge.bg-primary,
+#game-view .badge.bg-primary {
+  background-color: var(--site-background) !important;
+  color: #fff;
+  border: 1px solid #ba3535;
+}
+#game-detail .btn-primary,
+#game-view .btn-primary {
+  background: var(--site-background) !important;
+  border-color: #ba3535 !important;
+  color: #fff;
+}
+#game-detail .btn-primary:hover,
+#game-detail .btn-primary:focus,
+#game-view .btn-primary:hover,
+#game-view .btn-primary:focus {
+  background: #ba3535 !important;
+  border-color: #ba3535 !important;
+  color: #fff;
+} 
