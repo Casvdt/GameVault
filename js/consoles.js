@@ -31,15 +31,15 @@ function renderConsoleGames(consoleName) {
             const card = document.createElement('div');
             card.className = 'card h-100';
 
+            // Img wrapper for mobile portrait/aspect CSS
             const imgContainer = document.createElement('div');
             imgContainer.className = 'card-img-container';
-            
             const img = document.createElement('img');
             img.className = 'card-img-top';
             img.src = base + game.image;
             img.alt = game.title;
-            
             imgContainer.appendChild(img);
+
             card.appendChild(imgContainer);
             a.appendChild(card);
             col.appendChild(a);
