@@ -174,10 +174,22 @@ function initSearch() {
             return;
         }
         
-        // Filter games based on search term across all games
-        // Only filter by category if we're not searching
+        // First, check for exact title match
+        const exactMatch = window.GAMES.find(game => 
+            game.title.toLowerCase() === searchTerm.toLowerCase()
+        );
+
+        // If exact match found, redirect to game page
+        if (exactMatch) {
+            // Get the base URL (handles both local and production paths)
+            const baseUrl = window.location.href.includes('html') ? '' : 'html/';
+            window.location.href = `${baseUrl}game.html?slug=${exactMatch.slug}`;
+            return;
+        }
+
+        // If no exact match, filter games based on search term across all games
         const filteredGames = window.GAMES.filter(game => {
-            // First check if the game matches the search term
+            // Check if the game matches the search term
             const matchesSearch = game.title.toLowerCase().includes(searchTerm) ||
                                 (game.genres && game.genres.some(g => g.toLowerCase().includes(searchTerm))) ||
                                 (game.platforms && game.platforms.some(p => p.toLowerCase().includes(searchTerm))) ||
