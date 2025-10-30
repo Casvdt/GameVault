@@ -32,7 +32,7 @@ function renderCategory(category) {
 
         const img = document.createElement('img');
         img.className = 'card-img-top';
-        img.src = base + game.image;
+        img.src = game.image; // Always use this flat path
         img.alt = game.title;
 
         const cardBody = document.createElement('div');

@@ -30,7 +30,7 @@ function renderConsoleGames(consoleName) {
             card.className = 'card game-tile h-100';
             const img = document.createElement('img');
             img.className = 'card-img-top';
-            img.src = base + game.image;
+            img.src = game.image; // Always just game-images/...
             img.alt = game.title;
             const cardBody = document.createElement('div');
             cardBody.className = 'card-body';
